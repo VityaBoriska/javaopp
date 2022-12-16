@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
         z = z++;
 
         myCat = new Cat(4,  "Puma", "Pudge", "blue");
