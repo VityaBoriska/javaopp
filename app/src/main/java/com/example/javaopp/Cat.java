@@ -1,5 +1,6 @@
 package com.example.javaopp;
 
+
 import android.util.Log;
 
 public class Cat extends  Animal {
@@ -30,3 +31,4 @@ public class Cat extends  Animal {
         Log.i("talk()", "Meow! " + hello);
     }
 }
+
