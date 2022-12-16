@@ -1,6 +1,5 @@
 package com.example.javaopp;
 
-
 import android.util.Log;
 
 import java.util.Locale;
@@ -13,6 +12,23 @@ public class Cat extends Animal{
 
     String helloText;
     CatMood catMood;
+
+    static class  CountResetter{
+        boolean moreThan100;
+
+        CountResetter(){
+            if(Cat.count > 5){
+                moreThan100 = true;
+            }
+            if(moreThan100){
+                resetCounter(0);
+            }
+        }
+        void resetCounter(int value){
+            Cat.count = value;
+        }
+
+    }
 
     class CatMood{
         int levelOfMood;

@@ -27,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
         Cat cat34 = new Cat(8, "Boris");
         cat34.talk();
 
+        Cat cat35 = new Cat();
+        Cat cat36 = new Cat();
+        Cat cat37 = new Cat();
+        Cat cat38 = new Cat();
+
+        Log.i("count",""+Cat.count);
+
+        Cat.CountResetter countResetter = new Cat.CountResetter();
+
+        Log.i("count",""+Cat.count);
     }
 
 }
