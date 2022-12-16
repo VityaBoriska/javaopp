@@ -1,5 +1,4 @@
 package com.example.javaopp;
-
 import android.util.Log;
 
 public class Animal {
