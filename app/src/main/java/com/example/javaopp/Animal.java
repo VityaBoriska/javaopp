@@ -3,10 +3,10 @@ package com.example.javaopp;
 import android.util.Log;
 
 public class Animal {
-    int numberOfLegs;
+    int number0fLegs;
     boolean isAlive;
 
-    public String breathe() {
-        return "I can breathe";
+    public String breathe(){
+        return  "I can breathe";
     }
 }

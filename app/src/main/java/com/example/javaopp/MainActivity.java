@@ -7,63 +7,48 @@ import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
-    //private
-    //package access
-    //protected
-    //public
-
     Cat myCat;
     int z;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        z++;
 
-
-
-        z = z++;
-
-        myCat = new Cat(4,  "Puma", "Pudge", "blue");
+        myCat = new Cat(3,"Barsik","Padre","red");
         myCat.talk();
 
-        Cat murzik = new Cat(2, "Murza", "pitbul", "Green");
+        Cat murzik = new Cat(4,"Murzik","Fratello","yellow");
         murzik.talk();
-        murzik.breathe();
 
         Cat glasha = new Cat();
-        glasha.age = 5;
-        glasha.name = "Masha";
-        glasha.breed = "American";
+        glasha.age = 1;
+        glasha.name = "Glasha";
+        glasha.breed = "Don";
         glasha.color = "brown";
-        glasha.numberOfLegs = 4;
-        Log.i("numberOfLegs", String.valueOf(glasha.numberOfLegs));
         glasha.talk();
+
+        Cat vaska = new Cat();
+        vaska.talk("Meow, meow!");
 
         Puma puma = new Puma();
         puma.name = "Leo";
+
         puma.breathe();
         puma.talk();
         puma.isAlive = true;
-        puma.name = "Leo";
-        Log.i("isAlive", String.valueOf(puma.isAlive));
-        Log.i("breathe()", "My name is " + puma.name + " and " + puma.breathe());
-
-
+        Log.i("isAlive","My name is " + puma.name + " and " + puma.breathe());
     }
-
     void method(double x, int y) {
         int a;
         a = 1;
         a = y + 1;
-        double d = x*2;
+        double d = x * 2;
         z = a + y;
     }
-
     void method1() {
-        int b;
-        b = 1;
+        int a;
+        a = 1;
     }
 }
 
