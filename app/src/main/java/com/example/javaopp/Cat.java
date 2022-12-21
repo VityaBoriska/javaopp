@@ -1,10 +1,9 @@
 package com.example.javaopp;
-
 import android.util.Log;
 
 import java.util.Locale;
 
-public class Cat extends Animal{
+public abstract class Cat extends Animal{
     int age;
     String name;
     final static int numberOfLegs= 4;
